@@ -3,9 +3,12 @@ So that I don't forget
 
 1. Make sure the NVIDIA drivers are installed and reboot if you just installed them.
 2. Open a terminal and type: nano prime-run
-3. Copy and paste this script into nano, then save and quit nano:
+3. Copy and paste this script into nano, then save and quit 
+
+nano:
 #!/bin/bash
 __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia "$@"
+
 4. In terminal type:
 $ sudo mv prime-run /bin
 $ cd /bin
